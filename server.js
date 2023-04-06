@@ -1,9 +1,11 @@
 const { WebSocketServer } = require("ws");
+require("dotenv/config");
+
 const sanityClient = require("./lib/sanityClient");
 const getPostById = require("./lib/getPostById");
 
 const wss = new WebSocketServer({
-  port: 5000,
+  port: process.env.PORT || 5000,
 });
 
 wss.on("connection", function (ws) {
