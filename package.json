@@ -1,0 +1,21 @@
+{
+  "name": "socket",
+  "version": "0.0.1",
+  "description": "Socket server to fetch documents from Sanity",
+  "main": "server.js",
+  "scripts": {
+    "build": "yarn",
+    "start": "node server.js"
+  },
+  "author": "Amit Kumar",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@sanity/client": "^5.4.2",
+    "dotenv": "^16.0.3",
+    "ws": "^8.12.0"
+  },
+  "engines": {
+    "node": ">=14 <15"
+  }
+}
